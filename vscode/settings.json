@@ -1,0 +1,31 @@
+{
+  "dotnet.help.firstView": "gettingStarted",
+  "extensions.confirmedUriHandlerExtensionIds": [
+    "ms-dotnettools.dotnet-interactive-vscode",
+    "ms-dotnettools.vscode-dotnet-pack"
+  ],
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Iosevka",
+  "editor.fontLigatures": true,
+  "editor.mouseWheelZoom": true,
+  "editor.formatOnSave": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+  "workbench.colorTheme": "Atom One Dark",
+  "editor.fontSize": 16,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontWeight": "500",
+
+  // Formato Cursor
+  "editor.cursorStyle": "line", // Alternativas: "block", "underline"
+  "editor.cursorWidth": 2, // Ajusta el valor según tu preferencia
+  "editor.cursorBlinking": "expand",
+  "editor.linkedEditing": true,
+  "editor.cursorSmoothCaretAnimation": "on"
+}

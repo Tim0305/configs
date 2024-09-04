@@ -1,0 +1,85 @@
+" Syntax
+syntax on
+
+" Cursor
+set guicursor=sm:block
+
+" Numbers
+set number
+set relativenumber
+
+" Mouse
+set mouse=a
+
+" Clipboard
+" El mismo del s.o
+set clipboard=unnamed
+
+set showcmd
+set ruler
+set encoding=utf8
+set showmatch
+set sw=4
+let mapleader = " " "es para definir un caracter lider para realizar combinaciones de teclas sin afectar a las predefinidas por el s.o, en este caso, el space
+set laststatus=2
+set backspace=2
+set guioptions-=T
+set guioptions-=L
+
+imap jk <Esc>
+
+"Mapping to reload config
+nmap <leader>so :source $HOME\_vimrc<CR>
+nmap <leader>w :w <CR>
+nmap <leader>q :q <CR>
+
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 12
+  elseif has("gui_macvim")
+    set guifont=Menlo\ Regular:h14
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+endif
+
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+"
+
+call plug#begin('~/.vim/plugged')
+" Tema
+"Plug 'morhetz/gruvbox' 
+
+"IDE
+"Plug 'easymotion/vim-easymotion'
+
+"Nerdtree
+Plug 'preservim/nerdtree'
+
+"Tmux
+Plug 'christoomey/vim-tmux-navigator'
+
+" Colorschemes
+"Plug 'https://github.com/rafi/awesome-vim-colorschemes'
+
+"Autocompletion
+"Plug 'https://github.com/neoclide/coc.nvim
+
+" Vim Airline
+"Plug 'https://github.com/vim-airline/vim-airline.git'
+
+" Cursor Line
+"Plug 'sstallion/vim-cursorline'
+
+call plug#end()
+
+nmap <Leader>nt :NERDTreeFind<CR>
+nmap <Leader>t :NERDTreeToggle<CR>
+nmap <Leader>s <Plug>(easymotion-s3)
+"colorscheme jellybeans
+"colorscheme gruvbox
+"let g:gruvbox_contrast_dark = "hard"
+
+colorscheme desert
